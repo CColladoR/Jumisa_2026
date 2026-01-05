@@ -1,5 +1,5 @@
 import React from 'react';
-import { Factory, Award, Truck, ExternalLink } from 'lucide-react';
+import { Factory, Award, Truck, ExternalLink, MapPin } from 'lucide-react';
 import { INTEREST_LINKS } from '../constants';
 
 const Home: React.FC = () => {
@@ -45,33 +45,85 @@ const Home: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
              {/* Plant 1 */}
-            <div className="bg-slate-50 rounded-xl p-8 border-l-8 border-orange-600 shadow-sm hover:shadow-md transition-shadow">
-               <div className="flex items-center mb-4">
-                 <div className="bg-orange-100 p-3 rounded-full mr-4">
-                    <Factory className="text-orange-600 w-8 h-8" />
-                 </div>
-                 <h3 className="text-2xl font-bold text-slate-800">Jumisa 1</h3>
+            <div className="bg-slate-50 rounded-xl p-8 border-l-8 border-orange-600 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
+               <div className="flex-grow">
+                   <div className="flex items-center mb-4">
+                     <div className="bg-orange-100 p-3 rounded-full mr-4">
+                        <Factory className="text-orange-600 w-8 h-8" />
+                     </div>
+                     <h3 className="text-2xl font-bold text-slate-800">Jumisa 1</h3>
+                   </div>
+                   <p className="text-slate-600 mb-2 font-semibold">Yuncler, Toledo</p>
+                   <p className="text-slate-500 mb-6">
+                     Sede central y planta de producción especializada. Innovación constante en procesos de cocción y moldeado.
+                   </p>
                </div>
-               <p className="text-slate-600 mb-2 font-semibold">Yuncler, Toledo</p>
-               <p className="text-slate-500">
-                 Sede central y planta de producción especializada. Innovación constante en procesos de cocción y moldeado.
-               </p>
+               
+               {/* Map Embed Plant 1 */}
+               <div className="mt-auto rounded-lg overflow-hidden border border-slate-200 bg-white">
+                  <iframe 
+                    width="100%" 
+                    height="250" 
+                    frameBorder="0" 
+                    scrolling="no" 
+                    marginHeight={0} 
+                    marginWidth={0} 
+                    src="https://maps.google.com/maps?q=40.037467,-3.903191&hl=es&z=15&output=embed"
+                    title="Mapa Jumisa 1"
+                    className="w-full grayscale hover:grayscale-0 transition-all duration-500"
+                  ></iframe>
+                  <a 
+                    href="https://www.google.com/maps/place/Ju%C3%A1rez+y+Millas,+S.A.+-+Jumisa+1/@40.037467,-3.903191,15z/data=!4m6!3m5!1s0xd41fb2a669553c9:0xde8fa97edd675b52!8m2!3d40.0374665!4d-3.9031913!16s%2Fg%2F1tdzbqny?hl=es&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 w-full py-3 bg-white text-orange-600 font-semibold text-sm hover:bg-orange-50 transition-colors border-t border-slate-100"
+                  >
+                    <MapPin size={16} />
+                    Ver ubicación en Google Maps
+                  </a>
+               </div>
             </div>
 
             {/* Plant 2 */}
-            <div className="bg-slate-50 rounded-xl p-8 border-l-8 border-slate-700 shadow-sm hover:shadow-md transition-shadow">
-               <div className="flex items-center mb-4">
-                 <div className="bg-slate-200 p-3 rounded-full mr-4">
-                    <Factory className="text-slate-700 w-8 h-8" />
-                 </div>
-                 <h3 className="text-2xl font-bold text-slate-800">Jumisa 2</h3>
+            <div className="bg-slate-50 rounded-xl p-8 border-l-8 border-slate-700 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
+               <div className="flex-grow">
+                   <div className="flex items-center mb-4">
+                     <div className="bg-slate-200 p-3 rounded-full mr-4">
+                        <Factory className="text-slate-700 w-8 h-8" />
+                     </div>
+                     <h3 className="text-2xl font-bold text-slate-800">Jumisa 2</h3>
+                   </div>
+                   <p className="text-slate-600 mb-2 font-semibold">Pantoja, Toledo</p>
+                   <p className="text-slate-500 mb-6">
+                     Centro productivo de alta capacidad. Ampliación de nuestra capacidad logística y de stock.
+                   </p>
                </div>
-               <p className="text-slate-600 mb-2 font-semibold">Pantoja, Toledo</p>
-               <p className="text-slate-500">
-                 Centro productivo de alta capacidad. Ampliación de nuestra capacidad logística y de stock.
-               </p>
+
+               {/* Map Embed Plant 2 */}
+               <div className="mt-auto rounded-lg overflow-hidden border border-slate-200 bg-white">
+                  <iframe 
+                    width="100%" 
+                    height="250" 
+                    frameBorder="0" 
+                    scrolling="no" 
+                    marginHeight={0} 
+                    marginWidth={0} 
+                    src="https://maps.google.com/maps?q=40.032586,-3.832228&hl=es&z=15&output=embed"
+                    title="Mapa Jumisa 2"
+                    className="w-full grayscale hover:grayscale-0 transition-all duration-500"
+                  ></iframe>
+                  <a 
+                    href="https://www.google.com/maps?ll=40.032586,-3.832228&z=15&t=m&hl=es&gl=ES&mapclient=embed&cid=11848613382607353349"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 w-full py-3 bg-white text-slate-700 font-semibold text-sm hover:bg-slate-100 transition-colors border-t border-slate-100"
+                  >
+                    <MapPin size={16} />
+                    Ver ubicación en Google Maps
+                  </a>
+               </div>
             </div>
           </div>
         </div>

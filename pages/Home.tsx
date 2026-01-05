@@ -132,16 +132,11 @@ const Home: React.FC = () => {
       {/* Features Grid */}
       <section className="py-16 bg-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div className="text-center p-6 bg-white rounded-lg shadow-sm">
                  <Award className="w-12 h-12 text-orange-600 mx-auto mb-4" />
                  <h3 className="text-xl font-bold mb-2">Calidad Certificada</h3>
                  <p className="text-slate-600">Cumplimos con todas las normativas europeas (CE) para garantizar la seguridad de su obra.</p>
-              </div>
-              <div className="text-center p-6 bg-white rounded-lg shadow-sm">
-                 <Truck className="w-12 h-12 text-orange-600 mx-auto mb-4" />
-                 <h3 className="text-xl font-bold mb-2">Logística Eficiente</h3>
-                 <p className="text-slate-600">Distribución rápida desde el centro de la península a cualquier punto.</p>
               </div>
               <div className="text-center p-6 bg-white rounded-lg shadow-sm">
                  <div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center bg-orange-100 rounded-full text-orange-600 text-xl font-bold">CE</div>

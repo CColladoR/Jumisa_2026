@@ -19,6 +19,11 @@ export const INTEREST_LINKS = [
   { name: "Venta de parcelas", url: "https://www.luzyvolumen.com/" },
 ];
 
+export const CATALOG_DOWNLOADS = {
+  jumisa: "https://raw.githubusercontent.com/CColladoR/Jumisa_Recursos/main/Productos%20Jumisa.pdf",
+  tabicesa: "https://raw.githubusercontent.com/CColladoR/Jumisa_Recursos/main/Productos%20Tabicesa.pdf"
+};
+
 // --- JUMISA DATA ---
 
 export const JUMISA_CATALOG: ProductCategory[] = [

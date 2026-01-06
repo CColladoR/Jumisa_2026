@@ -1,6 +1,7 @@
 import React from 'react';
-import { JUMISA_CATALOG } from '../constants';
+import { JUMISA_CATALOG, CATALOG_DOWNLOADS } from '../constants';
 import ProductTable from '../components/ProductTable';
+import { Download } from 'lucide-react';
 
 const CatalogJumisa: React.FC = () => {
   return (
@@ -15,6 +16,17 @@ const CatalogJumisa: React.FC = () => {
              <p className="text-slate-600 text-lg mb-8">
                 Soluciones tradicionales y eficientes. Ladrillos cerámicos, huecos, rasillones y machihembrados fabricados con la mejor arcilla de la Sagra.
              </p>
+             
+             {/* Download Button */}
+             <a 
+              href={CATALOG_DOWNLOADS.jumisa} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-orange-600 text-white font-bold rounded-full shadow-lg hover:bg-orange-700 transform hover:scale-105 transition-all duration-200"
+             >
+               <Download size={20} />
+               Descargar Catálogo PDF
+             </a>
           </div>
         </div>
 
